@@ -1,0 +1,18 @@
+#Suarez Canche Isaac Moises 3SB
+alumnos= []
+materias= []
+calificacion=[]
+nombres_para_los_alumnos= []
+
+for i in range (10):
+    nombre_de_alumno_individual=input(f"Ingrese el nombre del alumn@ {i+1}:  ")
+    nombres_para_los_alumnos.append(nombre_de_alumno_individual)
+    lista_alumno_calificacion=[]
+    for a in range (5):
+        print(f"Ingrese la calificacion de las materias para el alumn@ {nombre_de_alumno_individual}")
+        calificaciones_individuales = float(input(f"Calificación para Materia {a+1}: "))
+        lista_alumno_calificacion.append(calificaciones_individuales)
+    calificacion.append(lista_alumno_calificacion)
+
+for i in range(len(nombres_para_los_alumnos)):
+    print(f"Las calificaciones del Alumn@ {nombres_para_los_alumnos[i]} son: {calificacion[i]}")
